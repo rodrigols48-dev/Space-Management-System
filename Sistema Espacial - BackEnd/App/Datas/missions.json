@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Apollo 11",
+        "description": "Primeira missão tripulada a pousar na Lua.",
+        "launch_date": "1969-07-16",
+        "status": "Completed"
+    },
+    {
+        "name": "Mars Curiosity Rover",
+        "description": "Rover de Marte explorando a cratera Gale em Marte.",
+        "launch_date": "2011-11-26",
+        "status": "Active"
+    }
+]

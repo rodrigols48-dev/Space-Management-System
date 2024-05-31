@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Earth",
+        "type": "Planet",
+        "description": "O terceiro planeta a partir do Sol e o único objeto astronômico conhecido por abrigar vida.",
+        "discovery_date": null,
+        "discovered_by": null
+    },
+    {
+        "name": "Moon",
+        "type": "Moon",
+        "description": "O único satélite natural da Terra.",
+        "discovery_date": null,
+        "discovered_by": null
+    }
+]
