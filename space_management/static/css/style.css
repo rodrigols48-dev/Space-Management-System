@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Marvel', sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(5, 122, 238, 0.8); /* Transparência adicionada */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    position: relative; /* Necessário para o sublinhado */
+    transition: color 0.3s; /* Transição para a cor do texto */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajusta a posição do sublinhado */
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s; /* Transição para a largura do sublinhado */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+main {
+    padding: 2em;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.card {
+    background-color: #4d669c;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    width: 20%;
+}
+
+.card h2 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.chart {
+    background-color: #112;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 1em;
+    width: 45%;
+    height: 25%;
+}
+
+.chart h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+canvas {
+    width: 100%;
+}
+
+#space_home{
+   color: inherit;
+   text-decoration: none; 
+}
