@@ -1,5 +1,5 @@
-from app import ma
-from app.models import Mission
+from App import ma
+from App.models import Mission
 from marshmallow import fields
 
 class MissionSchema(ma.SQLAlchemyAutoSchema):

@@ -1,5 +1,5 @@
-from app import ma
-from app.models import CelestialBody
+from App import ma
+from App.models import CelestialBody
 from marshmallow import fields
 
 class CelestialBodySchema(ma.SQLAlchemyAutoSchema):

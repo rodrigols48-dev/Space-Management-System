@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
-from app.models import Mission
-from app.schemas.mission_schema import mission_schema, missions_schema
-from app import db
+from App.models import Mission
+from App.Schemas.missions_schema import mission_schema, missions_schema
+from App import db
 
 bp = Blueprint('missions', __name__)
 

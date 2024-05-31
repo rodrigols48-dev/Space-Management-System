@@ -1,5 +1,5 @@
-from app import create_app, db
-from app.models import Mission, CelestialBody
+from App import create_app, db
+from App.models import Mission, CelestialBody
 
 app = create_app()
 

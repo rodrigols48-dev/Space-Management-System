@@ -1,4 +1,4 @@
-from app import db
+from App import db
 
 class Mission(db.Model):
     id = db.Column(db.Integer, ForeignKey = True)

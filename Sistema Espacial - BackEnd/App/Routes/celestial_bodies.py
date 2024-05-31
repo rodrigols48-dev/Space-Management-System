@@ -1,9 +1,28 @@
 from flask import Blueprint, request, jsonify
-from app.models import CelestialBody
-from app.schemas.celestial_body_schema import celestial_body_schema, celestial_bodies_schema
-from app import db
+from flask_restful import Resource, reqparse
+from App.models import CelestialBody
+from App.Schemas.celestial_body_schema import celestial_body_schema, celestial_bodies_schema
+from App import db
+
+#para adicionar
+argumentos = reqparse.RequestParser()
+argumentos.add_argument('name', type=str)
+argumentos.add_argument('price', type=float)
+
+#para atualizar
+argumentos_update = reqparse.RequestParser() 
+argumentos_update.add_argument('id', type=int)
+argumentos_update.add_argument('name', type=str)
+argumentos_update.add_argument('price', type=float)
+#deletar
+argumentos_deletar = reqparse.RequestParser()
+argumentos_deletar.add_argument('id', type=int)
 
 bp = Blueprint('celestial_bodies', __name__)
+
+class Index(Resource):
+    def get(self):
+        return jsonify("Welcome Aplication Flask")
 
 @bp.route('/', methods=['GET'])
 def get_celestial_bodies():
