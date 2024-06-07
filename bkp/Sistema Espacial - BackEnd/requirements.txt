@@ -1,6 +1,6 @@
-Flask
-Flask-SQLAlchemy
-Flask-marshmallow
-flask-restful
-marshmallow-sqlalchemy
-Flask-Cors
+Flask==2.0.3
+Flask-SQLAlchemy==2.5.1
+Flask-marshmallow==0.14.0
+flask-restful==0.3.9
+marshmallow-sqlalchemy==0.26.1
+Flask-Cors==3.0.10
